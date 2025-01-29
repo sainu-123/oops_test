@@ -13,40 +13,93 @@
 // }
 
 //2*
-//
+// void main() {
+//   Dog d1 = Dog();
+//   Cat c1 = Cat();
+//   d1.makeSound();
+//   c1.makeSound();
+// }
 
-//3*
-void main() {
-  Shape s1 = Shape();
-  s1._color = "red";
-  s1.implimentColor();
-  Circle c1 = Circle("5");
-  Rectangle r1 = Rectangle("30", "40");
-  c1.circleRadious();
-  r1.rectanclefunc();
-}
+// abstract class Animal {
+//   void makeSound();
+// }
 
-class Shape {
-  String? _color;
-  void implimentColor() {
-    print(_color);
-  }
-}
+// class Dog extends Animal {
+//   @override
+//   void makeSound() {
+//     print("woof");
+//   }
+// }
 
-class Circle extends Shape {
-  Circle(this._rdious);
-  String? _rdious;
-  void circleRadious() {
-    print(_rdious);
-  }
-}
+// class Cat extends Animal {
+//   @override
+//   void makeSound() {
+//     print("meow");
+//   }
+// }
 
-class Rectangle extends Shape {
-  Rectangle(this._length, this._width);
-  String? _length;
-  String? _width;
-  void rectanclefunc() {
-    print(_length);
-    print(_width);
-  }
-}
+// //3*
+
+// void main() {
+//   Shape s1 = Shape();
+//   s1._color = "red";
+//   s1.implimentColor();
+//   Circle c1 = Circle("5");
+//   Rectangle r1 = Rectangle("30", "40");
+//   c1.circleRadious();
+//   r1.rectanclefunc();
+// }
+
+// class Shape {
+//   String? _color;
+//   void implimentColor() {
+//     print(_color);
+//   }
+// }
+
+// class Circle extends Shape {
+//   Circle(this._rdious);
+//   String? _rdious;
+//   void circleRadious() {
+//     print(_rdious);
+//   }
+// }
+
+// class Rectangle extends Shape {
+//   Rectangle(this._length, this._width);
+//   String? _length;
+//   String? _width;
+//   void rectanclefunc() {
+//     print(_length);
+//     print(_width);
+//   }
+// }
+
+// 4*
+
+// void main(){
+// Car c1=Car();
+// c1.startEngine();
+// c1.stopEngine();
+// }
+// mixin Logger {
+//   void logMessage(String message){
+//     print("");
+
+
+//   }
+// }
+// abstract class Vehicle{
+// void startEngine();
+// void stopEngine();
+// }
+// class Car extends Vehicle{
+//   @override
+// void startEngine(){
+//   print("engine start");
+// }
+// @override
+// void stopEngine(){
+//   print("engine stop");
+// }
+// }
